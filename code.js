@@ -1,10 +1,10 @@
 export const configurazione = {
-  testo: "G",
+  testo: "Clod",
 
   dimensione: 0.8,
   interlinea: 0.7,
   allineamento: "centro",
-  percorsoFont: "./assets/GravitasOne-Regular.ttf",
+  percorsoFont: "./assets/Bytesized-Regular.ttf",
 
   sensibilitàMicrofonoBase: 1,
   densitàPuntiBase: 1,
@@ -42,7 +42,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  rect(x, y, 100);
+  rect(x, y, 15);
 }
 
 /**
