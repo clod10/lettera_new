@@ -4,7 +4,7 @@ export const configurazione = {
   dimensione: 0.8,
   interlinea: 0.7,
   allineamento: "centro",
-  percorsoFont: "./assets/InputMonoCondensed-BoldItalic.ttf",
+  percorsoFont: "./assets/GravitasOne-Regular.ttf",
 
   sensibilitàMicrofonoBase: 1,
   densitàPuntiBase: 1,
@@ -42,19 +42,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  const size = sin((frameCount + indice) * 6) * ((volume * unita) / 2) * unita;
-
-  if (indice % 2 == 0) {
-    fill("black");
-  } else {
-    fill("white");
-  }
-  noStroke();
-
-  push();
-  translate(x, y);
-  ellipse(0, 0, size);
-  pop();
+  rect(x, y, 100);
 }
 
 /**
