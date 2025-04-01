@@ -9,7 +9,7 @@ export const configurazione = {
   sensibilitàMicrofonoBase: 1,
   densitàPuntiBase: 1,
 
-  nascondiInterfaccia: false,
+  nascondiInterfaccia: true,
 };
 
 /**
@@ -42,7 +42,7 @@ export function disegnaPunto({
   beta = 0,
   gamma = 0,
 }) {
-  ellipse(x, y, 18);
+  rect(x, y, 18);
 }
 
 /**
@@ -58,6 +58,7 @@ export function caricamentoRisorse() {}
 export function impostazioni() {
   frameRate(30);
   angleMode(DEGREES);
+  rectMode(CENTER);
 }
 
 /**
